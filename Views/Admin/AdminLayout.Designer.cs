@@ -33,6 +33,8 @@
             recipeToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
             label1 = new Label();
+            memberToolStripMenuItem = new ToolStripMenuItem();
+            recipeToolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -41,7 +43,7 @@
             menuStrip1.BackColor = Color.Honeydew;
             menuStrip1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { filesToolStripMenuItem, recipeToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { filesToolStripMenuItem, recipeToolStripMenuItem, memberToolStripMenuItem, recipeToolStripMenuItem1 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.Professional;
@@ -80,6 +82,18 @@
             label1.TabIndex = 2;
             label1.Text = "Hi, Admin!";
             // 
+            // memberToolStripMenuItem
+            // 
+            memberToolStripMenuItem.Name = "memberToolStripMenuItem";
+            memberToolStripMenuItem.Size = new Size(122, 36);
+            memberToolStripMenuItem.Text = "Member";
+            // 
+            // recipeToolStripMenuItem1
+            // 
+            recipeToolStripMenuItem1.Name = "recipeToolStripMenuItem1";
+            recipeToolStripMenuItem1.Size = new Size(101, 36);
+            recipeToolStripMenuItem1.Text = "Recipe";
+            // 
             // AdminLayout
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -105,5 +119,7 @@
         private ToolStripMenuItem recipeToolStripMenuItem;
         private Panel panel1;
         private Label label1;
+        private ToolStripMenuItem memberToolStripMenuItem;
+        private ToolStripMenuItem recipeToolStripMenuItem1;
     }
 }
