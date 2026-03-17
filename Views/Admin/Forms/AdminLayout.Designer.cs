@@ -31,10 +31,10 @@
             menuStrip1 = new MenuStrip();
             filesToolStripMenuItem = new ToolStripMenuItem();
             recipeToolStripMenuItem = new ToolStripMenuItem();
-            panel1 = new Panel();
-            label1 = new Label();
             memberToolStripMenuItem = new ToolStripMenuItem();
             recipeToolStripMenuItem1 = new ToolStripMenuItem();
+            MainPanels = new Panel();
+            label1 = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,21 +54,37 @@
             // filesToolStripMenuItem
             // 
             filesToolStripMenuItem.Name = "filesToolStripMenuItem";
-            filesToolStripMenuItem.Size = new Size(77, 36);
-            filesToolStripMenuItem.Text = "Files";
+            filesToolStripMenuItem.Size = new Size(164, 36);
+            filesToolStripMenuItem.Text = "AdminMenu";
+            filesToolStripMenuItem.Click += filesToolStripMenuItem_Click;
             // 
             // recipeToolStripMenuItem
             // 
             recipeToolStripMenuItem.Name = "recipeToolStripMenuItem";
-            recipeToolStripMenuItem.Size = new Size(101, 36);
-            recipeToolStripMenuItem.Text = "Recipe";
+            recipeToolStripMenuItem.Size = new Size(268, 36);
+            recipeToolStripMenuItem.Text = "Product Management";
+            recipeToolStripMenuItem.Click += recipeToolStripMenuItem_Click;
             // 
-            // panel1
+            // memberToolStripMenuItem
             // 
-            panel1.Location = new Point(25, 223);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1102, 559);
-            panel1.TabIndex = 1;
+            memberToolStripMenuItem.Name = "memberToolStripMenuItem";
+            memberToolStripMenuItem.Size = new Size(240, 36);
+            memberToolStripMenuItem.Text = "Transaction History";
+            memberToolStripMenuItem.Click += memberToolStripMenuItem_Click;
+            // 
+            // recipeToolStripMenuItem1
+            // 
+            recipeToolStripMenuItem1.Name = "recipeToolStripMenuItem1";
+            recipeToolStripMenuItem1.Size = new Size(16, 36);
+            // 
+            // MainPanels
+            // 
+            MainPanels.BackColor = Color.Lavender;
+            MainPanels.Location = new Point(25, 149);
+            MainPanels.Name = "MainPanels";
+            MainPanels.Size = new Size(1220, 633);
+            MainPanels.TabIndex = 1;
+            MainPanels.Paint += MainPanels_Paint;
             // 
             // label1
             // 
@@ -76,23 +92,11 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.LightCyan;
-            label1.Location = new Point(25, 165);
+            label1.Location = new Point(39, 64);
             label1.Name = "label1";
             label1.Size = new Size(182, 45);
             label1.TabIndex = 2;
             label1.Text = "Hi, Admin!";
-            // 
-            // memberToolStripMenuItem
-            // 
-            memberToolStripMenuItem.Name = "memberToolStripMenuItem";
-            memberToolStripMenuItem.Size = new Size(122, 36);
-            memberToolStripMenuItem.Text = "Member";
-            // 
-            // recipeToolStripMenuItem1
-            // 
-            recipeToolStripMenuItem1.Name = "recipeToolStripMenuItem1";
-            recipeToolStripMenuItem1.Size = new Size(101, 36);
-            recipeToolStripMenuItem1.Text = "Recipe";
             // 
             // AdminLayout
             // 
@@ -101,7 +105,7 @@
             BackgroundImage = Properties.Resources.download__22_1;
             ClientSize = new Size(1271, 827);
             Controls.Add(label1);
-            Controls.Add(panel1);
+            Controls.Add(MainPanels);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "AdminLayout";
@@ -117,7 +121,7 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem filesToolStripMenuItem;
         private ToolStripMenuItem recipeToolStripMenuItem;
-        private Panel panel1;
+        private Panel MainPanels;
         private Label label1;
         private ToolStripMenuItem memberToolStripMenuItem;
         private ToolStripMenuItem recipeToolStripMenuItem1;

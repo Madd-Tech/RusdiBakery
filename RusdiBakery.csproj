@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Public\" />
+    <Folder Include="Views\Public\Panels\Components\" />
   </ItemGroup>
 
 </Project>

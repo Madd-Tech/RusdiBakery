@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace RusdiBakery.Views.Admin
+namespace RusdiBakery.Views.Public.Panels
 {
-    public partial class AdminLayout : Form
+    public partial class Order : UserControl
     {
-        public AdminLayout()
+        public Order()
         {
             InitializeComponent();
         }

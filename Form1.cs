@@ -1,3 +1,5 @@
+using RusdiBakery.Views.Public.Forms;
+
 namespace RusdiBakery
 {
     public partial class Form1 : Form
@@ -22,6 +24,13 @@ namespace RusdiBakery
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PublicLayout PublicLayout = new PublicLayout();
+            PublicLayout.Show();
         }
     }
 }

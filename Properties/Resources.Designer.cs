@@ -73,6 +73,26 @@ namespace RusdiBakery.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Baguette {
+            get {
+                object obj = ResourceManager.GetObject("Baguette", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Delicious_Cruffins___Hibord__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Delicious Cruffins - Hibord (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Diamond_Close_up_Mobile_Wallpaper {
             get {
                 object obj = ResourceManager.GetObject("Diamond Close-up Mobile Wallpaper", resourceCulture);
@@ -116,6 +136,46 @@ namespace RusdiBakery.Properties {
         internal static System.Drawing.Bitmap download__23_ {
             get {
                 object obj = ResourceManager.GetObject("download (23)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eclair {
+            get {
+                object obj = ResourceManager.GetObject("Eclair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Golden_Butter_Brioche__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Golden Butter Brioche (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Quasong {
+            get {
+                object obj = ResourceManager.GetObject("Quasong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thorin_s_bread {
+            get {
+                object obj = ResourceManager.GetObject("Thorin\'s bread", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
