@@ -35,6 +35,8 @@
             recipeToolStripMenuItem1 = new ToolStripMenuItem();
             MainPanels = new Panel();
             label1 = new Label();
+            stockToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -43,7 +45,7 @@
             menuStrip1.BackColor = Color.Honeydew;
             menuStrip1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { filesToolStripMenuItem, recipeToolStripMenuItem, memberToolStripMenuItem, recipeToolStripMenuItem1 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { filesToolStripMenuItem, recipeToolStripMenuItem, memberToolStripMenuItem, recipeToolStripMenuItem1, stockToolStripMenuItem, exitToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.Professional;
@@ -98,6 +100,20 @@
             label1.TabIndex = 2;
             label1.Text = "Hi, Admin!";
             // 
+            // stockToolStripMenuItem
+            // 
+            stockToolStripMenuItem.Name = "stockToolStripMenuItem";
+            stockToolStripMenuItem.Size = new Size(89, 36);
+            stockToolStripMenuItem.Text = "Stock";
+            stockToolStripMenuItem.Click += stockToolStripMenuItem_Click;
+            // 
+            // exitToolStripMenuItem
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(67, 36);
+            exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
+            // 
             // AdminLayout
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -125,5 +141,7 @@
         private Label label1;
         private ToolStripMenuItem memberToolStripMenuItem;
         private ToolStripMenuItem recipeToolStripMenuItem1;
+        private ToolStripMenuItem stockToolStripMenuItem;
+        private ToolStripMenuItem exitToolStripMenuItem;
     }
 }

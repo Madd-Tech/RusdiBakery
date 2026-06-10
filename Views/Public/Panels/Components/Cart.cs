@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Text;
 using System.Windows.Forms;
 
-namespace RusdiBakery.Views.Public.Panels
+namespace RusdiBakery.Views.Public.Panels.Components
 {
-    public partial class Order : UserControl
+    public partial class Cart: UserControl
     {
-        public Order()
+        public Cart()
         {
             InitializeComponent();
         }

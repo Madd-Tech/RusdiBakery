@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Text;
 using System.Windows.Forms;
+using RusdiBakery;
+using RusdiBakery.repos;
 using RusdiBakery.Views.Admin.Panels;
 using RusdiBakery.Views.Public.Panels;
 
@@ -56,6 +58,27 @@ namespace RusdiBakery.Views.Admin
         {
             MainPanels.Controls.Clear();
             MainPanels.Controls.Add(new Dashboard());
+        }
+
+        private void stockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainPanels.Controls.Clear();
+            MainPanels.Controls.Add(new Stock());
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Are you sure you want to exit?", "Confirmation",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                // Clear session if any (currently SessionManager only handles Customer, but it's good practice)
+                SessionManager.Clear();
+
+                Form2 form2 = new Form2();
+                form2.Show();
+                this.Hide();
+            }
         }
     }
 }

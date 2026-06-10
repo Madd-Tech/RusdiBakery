@@ -38,12 +38,9 @@
             label3 = new Label();
             label2 = new Label();
             panel3 = new Panel();
+            label15 = new Label();
             label7 = new Label();
             label5 = new Label();
-            panel4 = new Panel();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
             label9 = new Label();
             label13 = new Label();
             label14 = new Label();
@@ -54,12 +51,11 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
-            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Thistle;
+            panel1.BackColor = Color.Indigo;
             panel1.Controls.Add(label8);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label6);
@@ -111,12 +107,12 @@
             dataGridView1.Location = new Point(39, 351);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1152, 257);
+            dataGridView1.Size = new Size(806, 257);
             dataGridView1.TabIndex = 1;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.LavenderBlush;
+            panel2.BackColor = Color.Navy;
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
@@ -165,7 +161,8 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.Thistle;
+            panel3.BackColor = Color.Indigo;
+            panel3.Controls.Add(label15);
             panel3.Controls.Add(label7);
             panel3.Controls.Add(label5);
             panel3.Location = new Point(640, 98);
@@ -173,6 +170,18 @@
             panel3.Size = new Size(249, 172);
             panel3.TabIndex = 1;
             panel3.Paint += panel3_Paint;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.BackColor = Color.Transparent;
+            label15.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.ForeColor = Color.LavenderBlush;
+            label15.Location = new Point(19, 128);
+            label15.Name = "label15";
+            label15.Size = new Size(108, 23);
+            label15.TabIndex = 12;
+            label15.Text = "Last week";
             // 
             // label7
             // 
@@ -185,6 +194,7 @@
             label7.Size = new Size(85, 39);
             label7.TabIndex = 12;
             label7.Text = "889+";
+            label7.Click += label7_Click;
             // 
             // label5
             // 
@@ -198,60 +208,12 @@
             label5.TabIndex = 12;
             label5.Text = "Orders Completed";
             // 
-            // panel4
-            // 
-            panel4.BackColor = Color.LavenderBlush;
-            panel4.Controls.Add(label12);
-            panel4.Controls.Add(label11);
-            panel4.Controls.Add(label10);
-            panel4.Location = new Point(942, 98);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(249, 172);
-            panel4.TabIndex = 2;
-            panel4.Paint += panel4_Paint;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
-            label12.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.Thistle;
-            label12.Location = new Point(22, 128);
-            label12.Name = "label12";
-            label12.Size = new Size(108, 23);
-            label12.TabIndex = 13;
-            label12.Text = "Last week";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.Transparent;
-            label11.Font = new Font("Impact", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.Thistle;
-            label11.Location = new Point(22, 89);
-            label11.Name = "label11";
-            label11.Size = new Size(68, 39);
-            label11.TabIndex = 13;
-            label11.Text = "58+";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.Thistle;
-            label10.Location = new Point(22, 21);
-            label10.Name = "label10";
-            label10.Size = new Size(167, 28);
-            label10.TabIndex = 13;
-            label10.Text = "Total Returns";
-            // 
             // label9
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Arial Rounded MT Bold", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.LavenderBlush;
+            label9.ForeColor = Color.Indigo;
             label9.Location = new Point(891, 282);
             label9.Name = "label9";
             label9.Size = new Size(84, 23);
@@ -275,7 +237,7 @@
             label14.AutoSize = true;
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.Thistle;
+            label14.ForeColor = Color.Navy;
             label14.Location = new Point(39, 311);
             label14.Name = "label14";
             label14.Size = new Size(143, 28);
@@ -319,7 +281,6 @@
             Controls.Add(textBox1);
             Controls.Add(label14);
             Controls.Add(label13);
-            Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(dataGridView1);
@@ -333,8 +294,6 @@
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -345,7 +304,6 @@
         private DataGridView dataGridView1;
         private Panel panel2;
         private Panel panel3;
-        private Panel panel4;
         private Label label1;
         private Label label6;
         private Label label8;
@@ -355,13 +313,11 @@
         private Label label9;
         private Label label7;
         private Label label5;
-        private Label label12;
-        private Label label11;
-        private Label label10;
         private Label label13;
         private Label label14;
         private TextBox textBox1;
         private DateTimePicker dateTimePicker1;
         private Button button3;
+        private Label label15;
     }
 }

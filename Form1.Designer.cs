@@ -1,4 +1,4 @@
-﻿namespace RusdiBakery
+namespace RusdiBakery
 {
     partial class Form1
     {
@@ -40,12 +40,14 @@
             label3 = new Label();
             label1 = new Label();
             label2 = new Label();
+            button2 = new Button();
             panel4.SuspendLayout();
             SuspendLayout();
             // 
             // panel4
             // 
             panel4.BackgroundImage = Properties.Resources.Diamond_Close_up_Mobile_Wallpaper;
+            panel4.Controls.Add(button2);
             panel4.Controls.Add(linkLabel1);
             panel4.Controls.Add(button1);
             panel4.Controls.Add(label6);
@@ -182,6 +184,19 @@
             label2.TabIndex = 101;
             label2.Text = "Bakery";
             // 
+            // button2
+            // 
+            button2.BackColor = Color.Plum;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.PaleTurquoise;
+            button2.Location = new Point(358, 605);
+            button2.Name = "button2";
+            button2.Size = new Size(166, 56);
+            button2.TabIndex = 9;
+            button2.Text = "Register";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -214,5 +229,6 @@
         private Label label6;
         private TextBox textBox3;
         private LinkLabel linkLabel1;
+        private Button button2;
     }
 }

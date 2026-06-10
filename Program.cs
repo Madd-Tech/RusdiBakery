@@ -1,3 +1,6 @@
+using RusdiBakery.Views.Admin;
+using RusdiBakery.Views.Public.Forms;
+
 namespace RusdiBakery
 {
     internal static class Program

@@ -1,4 +1,4 @@
-﻿namespace RusdiBakery
+namespace RusdiBakery
 {
     partial class Form2
     {
@@ -31,6 +31,7 @@
             label1 = new Label();
             label2 = new Label();
             panel4 = new Panel();
+            button2 = new Button();
             linkLabel1 = new LinkLabel();
             button1 = new Button();
             label6 = new Label();
@@ -40,6 +41,7 @@
             textBox1 = new TextBox();
             label4 = new Label();
             label3 = new Label();
+            linkLabel2 = new LinkLabel();
             panel4.SuspendLayout();
             SuspendLayout();
             // 
@@ -71,6 +73,8 @@
             // panel4
             // 
             panel4.BackgroundImage = Properties.Resources.download__21___1_;
+            panel4.Controls.Add(linkLabel2);
+            panel4.Controls.Add(button2);
             panel4.Controls.Add(linkLabel1);
             panel4.Controls.Add(button1);
             panel4.Controls.Add(label6);
@@ -84,6 +88,19 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(582, 793);
             panel4.TabIndex = 103;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Plum;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.PaleTurquoise;
+            button2.Location = new Point(358, 605);
+            button2.Name = "button2";
+            button2.Size = new Size(166, 56);
+            button2.TabIndex = 11;
+            button2.Text = "Register";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // linkLabel1
             // 
@@ -181,6 +198,17 @@
             label3.TabIndex = 0;
             label3.Text = "Login Admin";
             // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Location = new Point(358, 753);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(156, 25);
+            linkLabel2.TabIndex = 12;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Forgot password?";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -212,5 +240,7 @@
         private TextBox textBox1;
         private Label label4;
         private Label label3;
+        private Button button2;
+        private LinkLabel linkLabel2;
     }
 }

@@ -37,15 +37,15 @@
             dataGridView1 = new DataGridView();
             label1 = new Label();
             thirdpanel = new Panel();
-            label6 = new Label();
             textBox1 = new TextBox();
-            comboBox2 = new ComboBox();
             label3 = new Label();
             panel2 = new Panel();
             button4 = new Button();
             button3 = new Button();
             label4 = new Label();
             label5 = new Label();
+            label6 = new Label();
+            textBox2 = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             thirdpanel.SuspendLayout();
@@ -154,27 +154,15 @@
             // 
             thirdpanel.BackColor = Color.MediumOrchid;
             thirdpanel.BackgroundImage = Properties.Resources.Diamond_Close_up_Mobile_Wallpaper;
+            thirdpanel.Controls.Add(textBox2);
             thirdpanel.Controls.Add(label6);
             thirdpanel.Controls.Add(textBox1);
-            thirdpanel.Controls.Add(comboBox2);
             thirdpanel.Controls.Add(label3);
             thirdpanel.Location = new Point(788, 90);
             thirdpanel.Name = "thirdpanel";
             thirdpanel.Size = new Size(390, 355);
             thirdpanel.TabIndex = 3;
             thirdpanel.Paint += thirdpanel_Paint;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.LavenderBlush;
-            label6.Location = new Point(38, 173);
-            label6.Name = "label6";
-            label6.Size = new Size(133, 28);
-            label6.TabIndex = 8;
-            label6.Text = "Category :";
             // 
             // textBox1
             // 
@@ -183,16 +171,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(312, 36);
             textBox1.TabIndex = 7;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "A - Z", "Z - A", "Most Ordered" });
-            comboBox2.Location = new Point(38, 204);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(312, 33);
-            comboBox2.TabIndex = 6;
-            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // label3
             // 
@@ -249,7 +227,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Arial Rounded MT Bold", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.LavenderBlush;
+            label4.ForeColor = Color.DarkMagenta;
             label4.Location = new Point(788, 42);
             label4.Name = "label4";
             label4.Size = new Size(255, 32);
@@ -261,12 +239,32 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Arial Rounded MT Bold", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.LavenderBlush;
+            label5.ForeColor = Color.DarkMagenta;
             label5.Location = new Point(788, 462);
             label5.Name = "label5";
             label5.Size = new Size(103, 32);
             label5.TabIndex = 7;
             label5.Text = "Action";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.LavenderBlush;
+            label6.Location = new Point(38, 152);
+            label6.Name = "label6";
+            label6.Size = new Size(88, 28);
+            label6.TabIndex = 8;
+            label6.Text = "Price :";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(38, 194);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(312, 36);
+            textBox2.TabIndex = 9;
             // 
             // Product
             // 
@@ -303,12 +301,12 @@
         private Panel panel2;
         private Label label4;
         private Label label5;
-        private ComboBox comboBox2;
-        private Label label6;
         private TextBox textBox1;
         private Button button2;
         private Button button1;
         private Button button4;
         private Button button3;
+        private TextBox textBox2;
+        private Label label6;
     }
 }
